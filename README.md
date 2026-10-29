@@ -4,9 +4,9 @@
 
 ## Project Summary
 
-FactChex is a full-stack web application built as a two-semester, client-sponsored Junior Capstone project at Georgia Tech (Aug 2024 - May 2025). Our 5-person team was tasked with creating a platform to combat media misinformation by harnessing AI to provide objective, real-time analysis of online articles and claims.
+FactChex is a full-stack web application developed by a five-person team during a two-semester, client-sponsored capstone at Georgia Tech (August 2024–May 2025). The project helps users explore news articles and political claims through AI-assisted responses, source references, and media-bias analysis. The website also includes user accounts, saved chat history, trending topics, and daily trivia.
 
-The final product was a comprehensive site featuring an AI chatbot (powered by the OpenAI API) that could analyze news links for trustworthiness, a full user authentication and data system, and daily user engagement features like trivia.
+My primary contributions were the Firebase data model, authentication flows, database operations, and integration between the React interface and Firebase. I also supported the team's Git workflow, resolved integration conflicts, and prepared the installation guide for the client.
 
 
 > **Note: This is a portfolio entry.**
@@ -57,10 +57,45 @@ I owned approximately **90% of our Firebase implementation** from the ground up.
 
 * **Database Design:** Architecting the NoSQL (Firestore) database schema to store all user data, chat history, and trivia content.
 * **Authentication:** Implementing the complete user auth flow (sign-up, sign-in, sign-out) using Firebase Authentication.
-* **Backend Logic:** Writing the core backend functions for all database interactions (CRUD operations), such as saving a user's chat message, retrieving their chat history, and managing admin-level data.* **Admin Controls:** Building the logic and security rules for admin-level accounts.
+* **Backend Logic:** Writing the core backend functions for all database interactions (CRUD operations), such as saving a user's chat message, retrieving their chat history, and managing admin-level data.
+* **Admin Controls:** Building the logic and security rules for admin-level accounts.
 
 ### 2. Full-Stack Integration
 I was responsible for the **data integration** between our React frontend and Firebase. While the team collaborated on building the React UI pages, I personally wrote the **data-handling logic** (e.g., from sign-up, login, and chat forms) to securely connect to, send, and fetch data from the Firebase backend.
 
 ### 3. Git & Team Leadership
 I served as the team's main point of contact for Git and GitHub. I helped all team members with version control problems, established our branching strategy, and was responsible for **resolving all major merge conflicts**, ensuring a smooth development workflow. I also created the final installation guide for the client.
+
+## Screenshots
+
+The screenshots below document the FactChex website and an earlier chatbot interface. They illustrate the team's product; my individual contributions are described above.
+
+### Home Page
+
+The home page brings together the question-entry interface, trending topics, and daily trivia, giving users several ways to explore the site's content.
+
+![FactChex website home page](Screenshots/Home.png)
+
+### Trending Topics
+
+The topic view presents a summary, analysis, and source references for a selected news topic. These examples illustrate the interface and should not be treated as independently verified reporting.
+
+![Trending topic summary, analysis, and sources](Screenshots/Trending%20Topics.png)
+
+### Daily Trivia
+
+The trivia section provides access to the current question and previous daily entries. It complements the fact-checking features with a recurring activity.
+
+![Daily trivia and previous entries](Screenshots/Trivia.png)
+
+### Leaderboard
+
+The leaderboard displays example scores, streaks, and a highlighted ranking for the current user. The entries shown are demonstration data, not evidence of public adoption.
+
+![Daily trivia leaderboard](Screenshots/Leaderboard.png)
+
+### Earlier Chatbot Interface
+
+This screenshot preserves an earlier version of the question-and-response interface. It illustrates the interaction flow rather than the final website layout or the accuracy of generated answers.
+
+![Earlier FactChex chatbot interface](Screenshots/chatbot.png)
